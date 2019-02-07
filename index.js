@@ -42,7 +42,7 @@ client.on('connected', (address, port) => {
 // 
 client.on('chat', (channel, user, message, self) => {
   switch(message) {
-    case 'mattyLina': 
+    case 'lol': 
       client.action('Mattypocket', `mattyLina mattyLina mattyLina mattyLina mattyLina`);
       break;
     case 'mattyLina mattyLina': 
