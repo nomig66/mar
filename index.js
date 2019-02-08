@@ -25,7 +25,7 @@ let options = {
     username: process.env.USERNAME,
     password: process.env.PASSWORD
   },
-    channels: ["mattypocket"]
+    channels: ["shinbot"]
 };
 
 // Set up our new TMI client and connect to the server.
@@ -42,35 +42,11 @@ client.on('connected', (address, port) => {
 // 
 client.on('chat', (channel, user, message, self) => {
   switch(message) {
-    case 'lol': 
-      client.action('Mattypocket', `mattyLina mattyLina mattyLina mattyLina mattyLina`);
+    case '!twitter': 
+      client.action('shinbot', `${user['display-name']} you can find it at twitter.com/shindakun`);
       break;
-    case 'mattyLina mattyLina': 
-      client.action('Mattypocket', `mattyLina mattyLina mattyLina mattyLina mattyLina`);
-      break;
-    case 'mattyLina mattyLina mattyLina': 
-      client.action('Mattypocket', `mattyLina mattyLina mattyLina mattyLina mattyLina`);
-      break;
-    case 'mattyLina mattyLina mattyLina mattyLina': 
-      client.action('Mattypocket', `mattyLina mattyLina mattyLina mattyLina mattyLina`);
-      break;
-    case 'mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina': 
-      client.action('Mattypocket', `mattyLina mattyLina mattyLina mattyLina mattyLina`);
-      break;
-    case 'mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina': 
-      client.action('Mattypocket', `mattyLina mattyLina mattyLina mattyLina mattyLina`);
-      break;
-    case 'mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina': 
-      client.action('Mattypocket', `mattyLina mattyLina mattyLina mattyLina mattyLina`);
-      break;
-    case 'mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina': 
-      client.action('Mattypocket', `mattyLina mattyLina mattyLina mattyLina mattyLina`);
-      break;
-    case 'mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina': 
-      client.action('Mattypocket', `mattyLina mattyLina mattyLina mattyLina mattyLina`);
-      break;
-    case 'mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina mattyLina': 
-      client.action('Mattypocket', `mattyLina mattyLina mattyLina mattyLina mattyLina`);
+    case '!github': 
+      client.action('shinbot', `${user['display-name']} you can find it at github.com/shindakun`);
       break;
     default:
       break;
