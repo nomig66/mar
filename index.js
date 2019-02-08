@@ -25,7 +25,7 @@ let options = {
     username: process.env.USERNAME,
     password: process.env.PASSWORD
   },
-    channels: ["shinbot"]
+    channels: ["mattylina"]
 };
 
 // Set up our new TMI client and connect to the server.
